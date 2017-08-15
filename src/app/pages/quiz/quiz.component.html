@@ -1,0 +1,10 @@
+<h1>Question {{game.step+1}}</h1>
+
+<h2>{{question.question}}</h2>
+<h3>{{timeLeft}}</h3>
+<button *ngFor="let option of question.options;let i = index" type="button" class="btn btn-default"
+        (click)="answer(i)">{{option}}
+</button>
+<br />
+
+<img class="" alt="image" width="300" [src]="src"/>
